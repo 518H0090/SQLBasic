@@ -64,4 +64,14 @@ SELECT * FROM [Student];
 sp_rename 'Student','Student2'
 
 --copy table
+-- Dùng select thì sẽ tạo mới bảng
 SELECT * INTO Student1 FROM Student2
+
+/*
+tạo mới bảng và thêm dữ liệu từ bảng có sẵn
+SELECT * INTO TABLE_NEED_VALUE FROM TABLE_HAVE_VALUE
+
+nếu có bảng mà chỉ cần thêm dữ liệu từ bảng có sẵn thì dùng
+INSERT INTO TABLE_NEED_VALUE
+SELECT * FROM TABLE_HAVE_VALUE
+*/
